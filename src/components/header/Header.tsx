@@ -17,11 +17,12 @@ export function Header() {
           </div>
 
           <nav className={styles.nav}>
-            <a href="#dashboard" className={styles.link}>Dashboard</a>
-            <a href="#data-sources" className={styles.link}>Data Sources</a>
-            <a href="#teknologi-ai" className={styles.link}>Teknologi AI</a>
-            <a href="#mitigasi" className={styles.link}>Mitigasi</a>
-            <a href="#sdg" className={styles.link}>SDG</a>
+            <a href="/#dashboard" className={styles.link}>Dashboard</a>
+            <a href="/#data-sources" className={styles.link}>Data Sources</a>
+            <a href="/#teknologi-ai" className={styles.link}>Teknologi AI</a>
+            <a href="/#mitigasi" className={styles.link}>Mitigasi</a>
+            <a href="/#sdg" className={styles.link}>SDG</a>
+            <a href="/predict" className={styles.link}>Uji Prediksi</a>
           </nav>
 
         </div>

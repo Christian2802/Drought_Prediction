@@ -31,19 +31,22 @@ export function Footer() {
             <h3 className={styles.title}>Quick Links</h3>
             <ul className={styles.list}>
               <li className={styles.listItem}>
-                <a className={styles.link} href="#dashboard">Dashboard</a>
+                <a className={styles.link} href="/#dashboard">Dashboard</a>
               </li>
               <li className={styles.listItem}>
-                <a className={styles.link} href="#data-sources">Data Sources</a>
+                <a className={styles.link} href="/#data-sources">Data Sources</a>
               </li>
               <li className={styles.listItem}>
-                <a className={styles.link} href="#teknologi-ai">Teknologi AI</a>
+                <a className={styles.link} href="/#teknologi-ai">Teknologi AI</a>
               </li>
               <li className={styles.listItem}>
-                <a className={styles.link} href="#mitigasi">Mitigasi</a>
+                <a className={styles.link} href="/#mitigasi">Mitigasi</a>
               </li>
               <li className={styles.listItem}>
-                <a className={styles.link} href="#sdg">SDG</a>
+                <a className={styles.link} href="/#sdg">SDG</a>
+              </li>
+              <li className={styles.listItem}>
+                <a className={styles.link} href="/predict">Uji Prediksi</a>
               </li>
             </ul>
           </div>
