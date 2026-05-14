@@ -1,0 +1,123 @@
+.footer {
+  background-color: #111827;
+  color: white;
+  padding: 2.5rem 1rem;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+  }
+}
+
+.brand {
+  max-width: 300px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.logoBox {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(to bottom right, #3b82f6, #22c55e);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brandText {
+  color: white;
+  font-weight: 600;
+}
+
+.description {
+  color: #9ca3af;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  margin-bottom: 0.75rem;
+}
+
+.link {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: #60a5fa;
+}
+
+.contactItem {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.icon {
+  color: #60a5fa;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.contactLabel {
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+
+.contactText {
+  color: white;
+  text-decoration: none;
+}
+
+.contactText:hover {
+  color: #60a5fa;
+}
+
+.bottom {
+  padding-top: 1.25rem;
+  border-top: 1px solid #1f2937;
+}
+
+.bottomInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.bottomText {
+  color: #9ca3af;
+}

@@ -1,0 +1,73 @@
+.header {
+  background-color: var(--background);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 5000;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoBox {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(to bottom right, #3b82f6, #22c55e);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoText {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.nav {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link {
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: #2563eb;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
