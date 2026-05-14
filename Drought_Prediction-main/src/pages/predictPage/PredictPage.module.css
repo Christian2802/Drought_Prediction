@@ -39,6 +39,22 @@
   gap: 24px;
 }
 
+.section {
+  padding: 20px;
+  background: #f3f4f6;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section h3 {
+  margin: 0 0 8px 0;
+  color: #374151;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
 .inputGroup {
   display: flex;
   flex-direction: column;
@@ -66,6 +82,26 @@
 }
 
 .inputGroup input:focus {
+  outline: none;
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.inputGroup select {
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid #d1d5db;
+
+  font-size: 1rem;
+
+  transition: all 0.2s ease;
+
+  background-color: white;
+  cursor: pointer;
+}
+
+.inputGroup select:focus {
   outline: none;
   border-color: #2563eb;
 
