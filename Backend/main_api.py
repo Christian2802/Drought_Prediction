@@ -7,7 +7,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 from typing import Optional
 
-from database import get_db, PredictionHistory, engine, Base
+from database import get_db, PredictionHistory, engine, Base, SessionLocal
 from schemas import (
     PredictionRequest, PredictionResponse, HistoryResponse, 
     StationInfo, HealthResponse
@@ -433,9 +433,6 @@ async def root():
             "redoc": "/redoc (ReDoc)"
         }
     }
-
-# Import SessionLocal untuk health check
-from database import SessionLocal
 
 if __name__ == "__main__":
     import uvicorn
