@@ -90,7 +90,7 @@ export function TechnologyAI() {
               </div>
 
               <div className={styles.statItem}>
-                <div className={styles.statValueBlue}>96.6%</div>
+                <div className={styles.statValueBlue}>94.88%</div>
                 <div className={styles.statLabel}>Akurasi</div>
               </div>
             </div>
