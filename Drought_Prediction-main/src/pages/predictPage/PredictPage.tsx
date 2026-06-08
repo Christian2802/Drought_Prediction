@@ -22,7 +22,7 @@ export function PredictPage() {
   const [loading, setLoading] = useState(false);
   const [spi, setSpi] = useState<number | null>(null);
   const [score, setScore] = useState<number | null>(null);
-
+console.log('API URL:', import.meta.env.VITE_API_URL);
   const handlePredict = async () => {
     setLoading(true);
     setError(null);
