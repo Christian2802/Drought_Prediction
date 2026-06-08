@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, CircleMarker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import type { FeatureCollection, Feature } from 'geojson';
+import type { FeatureCollection, Feature, Polygon } from 'geojson';
 
 import styles from './DashboardPreview.module.css';
 
@@ -45,7 +45,7 @@ export function DashboardPreview() {
         console.log('GeoJSON Loaded:', data);
         
         const markerList = data.features
-          .filter((feature) => feature.geometry.type === 'Polygon')
+          .filter((feature): feature is Feature<Polygon> => feature.geometry.type === 'Polygon')
           .map((feature: Feature) => {
             const props = feature.properties as DroughtFeatureProperties;
             const coords = feature.geometry.coordinates;
