@@ -302,10 +302,10 @@ export function PredictPage() {
                 
                 {spi !== null && (
                   <div className={styles.details}>
-                    <div className={styles.detail}>
+                    {/* <div className={styles.detail}>
                       <span>SPI:</span>
                       <strong>{spi.toFixed(4)}</strong>
-                    </div>
+                    </div> */}
                     <div className={styles.detail}>
                       <span>Confidence:</span>
                       <strong>{((score || 0) * 100).toFixed(1)}%</strong>
